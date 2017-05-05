@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0023)http://www.dadikid.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit">
+    
+    <meta name="keywords" content="中投幼教，幼儿园加盟，品牌幼儿园合作加盟，中投品牌幼儿园加盟，幼儿园课程合作">
+    <meta name="description" content="中投幼教机构专注幼儿园三十年，现已跻身中国幼教行业前列，中投利用品牌优势，专业提供幼儿园加盟、幼儿园合作、资源合作、幼儿园课程合作等一站式服务。幼儿园加盟、幼儿园合作就选中投幼教，中投是幼儿园最理想的合作伙伴。">
+    <title>中投幼教，专注幼教三十年，幼儿园加盟合作就选中投幼教。</title>
+    <link rel="stylesheet" type="text/css" href="yjw_style.css">
+    <script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="jqShow.js" type="text/javascript"></script>
+    <script type="text/javascript" src="jquery.fancybox.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.css" media="screen">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fancybox').fancybox();
+
+            $(".various").fancybox({
+                maxWidth: 800,
+                maxHeight: 600,
+                fitToView: false,
+                width: '70%',
+                height: '70%',
+                autoSize: false,
+                closeClick: false,
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+        });
+    </script>
+<script src="share.js"></script><style type="text/css">.fancybox-margin{margin-right:17px;}</style><link rel="stylesheet" href="share_style0_16.css"></head>
+<body>
+    
+<div class="headerBox">
+    
+    <div class="hb_left">
+        <a href="" title="中投幼教网" class="logo"></a><span class="telIcon" style="font-size: 30px;line-height: 58px;">中投教育集团</span>
+    </div>
+    <div class="hb_right" style="margin-top: 25px;">
+        <div class="snsBox">
+       <!--     <a target="_blank" href="http://e.t.qq.com/edudadi" title="官方微博" class="snsIcon wxIcon"></a>-->
+            <div class="wxFl">
+                <a href="javascript:;" title="官方微博" class="snsIcon wxIcon"></a>
+                <div class="wxBox">
+                    <span class="arrow"></span>
+                    <img style="width: 100%;" src="images/weixin1.png">
+                    <p>
+                        中投官方微信</p>
+                </div>
+            </div>
+            <div class="wxFl">
+                <a href="javascript:;" title="官方微博" class="snsIcon wxIcon"></a>
+                <div class="wxBox">
+                    <span class="arrow"></span>
+                    <img style="width: 100%;" src="images/weixin2.png">
+                    <p>
+                        金融街官方微信</p>
+                </div>
+            </div>
+            <span class="s1">关注我们</span>
+        </div>
+    </div>
+    <!-- hb_right -->
+</div>
+<!-- headerBox -->
+<script type="text/javascript">
+    $(function () {
+        $('#pw').bind('keypress', function (event) {
+            if (event.keyCode == "13") {
+                $('#login').trigger("click");
+            }
+        });
+    });
+
+    $('#login').click(function () {
+        var account = $("#account").val();
+        var pw = $("#pw").val();
+        $.post("/Home/topLogin", { accout: account, password: pw }, function (data) {
+            if (data.result) {
+                $("#nosign").hide();
+                $("#signed").show();
+                $("#username").text(data.username);
+            }
+            else {
+                alert(data.username);
+            }
+        }, "json");
+    });
+
+
+    $('#logout').click(function () {
+        $("#pw").val("");
+        $.ajax({
+            url: "/Home/Logout",
+            type: "Post",
+            dataType: "json",
+            success: function (data) {
+                if (data.result) {
+                    $("#nosign").show();
+                    $("#signed").hide();
+                }
+            }
+        })
+    });
+</script>
+
+    <!-- headerBox -->
+    <div class="clearfix">
+    </div>
+
+    <div class="navBox">
+        <div class="navM" style="width:1100px">
+            <ul>
+                <li class="active=classStr"><a href="">首页</a></li>
+                <li =classstr="">
+                    <a href="">关于我们</a>
+                </li>                <li =classstr="">
+                    <a href="">幼儿园合作</a>
+                </li>                <li =classstr="">
+                    <a href="">校外教育合作</a>
+                </li>                <li =classstr="">
+                    <a href="">家校平台</a>
+                </li>                <li =classstr="">
+                    <div class="navM2">
+                        <a href="">培训</a>
+                        <ul class="nav2">
+                                        <li>
+                                            <a href="">产品</a>
+                                        </li>
+                                        <li>
+                                            <a href="">服务</a>
+                                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li =classstr="">
+                    <div class="navM2">
+                        <a href="http://www.dadikid.com/train">合作园所风采</a>
+                        <ul class="nav2">
+                                        <li>
+                                            <a href="">xxxx</a>
+                                        </li>
+                                        <li>
+                                            <a href="">xxx</a>
+                                        </li>
+                                        <li>
+                                            <a href="">xxxx</a>
+                                        </li>
+                                        <li>
+                                            <a href="">xxx</a>
+                                        </li>
+                                        <li>
+                                            <a href="">xxx</a>
+                                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li =classstr="">
+                    <a href="">联系我们</a>
+                </li>
+          <!--      <li =classstr="">
+                    <a href="http://www.dadikid.com/kchz">课程合作</a>
+                </li>                <li =classstr="">
+                    <a href="http://www.dadikid.com/4008">联盟合作</a>
+                </li>                <li =classstr="">
+                    <a href="http://www.dadikid.com/3947">幼教会展</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- navBox -->
+    <!-- navBox -->
+
+    
+<link href="ec.core.base.min.css" rel="stylesheet">
+<script src="jsapi.js" namespace="ec"></script><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
+<script src="ec.core.js"></script>
+<script src="slider-min.js"></script>
+<script src="ec.business.js"></script>
+
+<div class="ec-slider" id="index_slider" style="width: 1903px; height: 380px;">
+    
+    
+    <ul class="ec-slider-list" style="width: 1903px; height: 380px;">
+        
+            <li class="ec-slider-item" style="width: 1903px; height: 380px; position: absolute; display: none; background: url('images/20163301633382428.jpg') 50% 0px / cover no-repeat;">
+                <div style="width:100%;" class="ec-slider-item-img">
+                    <a style="width:100%;height:380px;display:block;" href=""></a>
+                </div>
+            </li>
+            <li class="ec-slider-item" style="width: 1903px; height: 380px; position: absolute; display: none; background: url('images/201633016333824282.jpg') 50% 0px / cover no-repeat;">
+                <div style="width:100%;" class="ec-slider-item-img">
+                    <a style="width:100%;height:380px;display:block;" href=""></a>
+                </div>
+            </li>
+            <li class="ec-slider-item" style="width: 1903px; height: 380px; position: absolute; display: none; background: url('images/201633016333824283.jpg') 50% 0px / cover no-repeat;">
+                <div style="width:100%;" class="ec-slider-item-img">
+                    <a style="width:100%;height:380px;display:block;" href=""></a>
+                </div>
+            </li>
+            <li class="ec-slider-item" style="width: 1903px; height: 380px; position: absolute; display: none; background: url('images/201633016333824284.jpg') 50% 0px / cover no-repeat;">
+                <div style="width:100%;" class="ec-slider-item-img">
+                    <a style="width:100%;height:380px;display:block;" href=""></a>
+                </div>
+            </li>
+            <li class="ec-slider-item" style="width: 1903px; height: 380px; position: absolute; background: url('images/201633016333824285.jpg') 50% 0px / cover no-repeat;">
+                <div style="width:100%;" class="ec-slider-item-img">
+                    <a style="width:100%;height:380px;display:block;" href=""></a>
+                </div>
+            </li>
+    </ul>
+    
+    
+<div class="ec-slider-nav-1"><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="current"></span></div><a class="button-slider-prev" href="javascript:;" style="display: none;"></a><a class="button-slider-next" href="javascript:;" style="display: none;"></a></div>
+<!-- focusBox -->
+
+<script>
+
+    $(function () {
+    });
+
+    ec.load("ec.slider", {
+        loadType: "lazy",
+        callback: function () {
+            $("#index_slider").slider({
+                width: '100%', //必须
+                height: 380, //必须
+                style: 1,                    //1显示分页，2只显示左右箭头,3两者都显示
+                pause: 3000,           //间隔时间
+                auto: true,
+                minWidth: 1200,
+                showNumber: false,
+                circleBtn: true
+            });
+        }
+    });
+</script>
+    
+<style>
+    .IndexNews {
+        width: 100%;
+        height: 50px;
+        background-color: #EEEEEE;
+        font-size: 13px;
+    }
+
+    .horn {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        float: left;
+    }
+
+    .TAd {
+        float: left;
+        width: 1070px;
+        height: 35px;
+        margin-left: 0px;
+        display: inline;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+        .TAd ul {
+            margin-top: 0px;
+            width: 100%;
+            height: 30px;
+        }
+
+            .TAd ul li {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden;
+            }
+
+    .NewsTitleL {
+    float:left;height:30px;  width:520px;margin-left:5px;
+    } 
+     .NewsTitleL a{
+    margin-left:5px;  float:left; width:431px;
+    } 
+      .NewsTitleL span{
+    margin-right: 10px; float: right; color:#999999;
+    } 
+
+
+
+    .NewsTitleR {
+    float:left;height:30px;  width:520px; margin-left:15px;
+    }
+
+     .NewsTitleR a{
+    margin-left:5px;  float:left; width:420px;
+    } 
+      .NewsTitleR span{
+    margin-right: 10px; float: right; color:#999999;
+    } 
+    
+
+
+
+        .TAd a:hover {
+            color: #5E9D17;
+        }
+</style>
+
+<div class="IndexNews">
+    <div style="width:1100px; height:60px; margin: 0 auto;">
+        <div class="horn"><img src="laba.png" alt=""></div>
+        <div id="TAd" class="TAd">
+            <ul id="ulAD" style="margin-top: 0px;">
+                    
+                    
+                    
+                    
+            <li>
+                        <div>
+                            <div class="NewsTitleL" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">【中投数学】福建片区同城培训研习会</a><span style="color: rgb(153, 153, 153);">2017/4/28</span>
+                            </div>
+                            <div class="NewsTitleR" style="" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">早教中心如何突破经营瓶颈，再创辉煌 —中投早教合作园：重庆荟爱早教中心分享</a><span>2017/4/21</span>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div>
+                            <div class="NewsTitleL" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">早教合作合作说明</a><span>2017/4/21</span>
+                            </div>
+                            <div class="NewsTitleR" style="" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">ABCmouse成果发布日</a><span style="color: rgb(153, 153, 153);">2017/4/20</span>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div>
+                            <div class="NewsTitleL" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">重庆2家中投早教合作园总部实地培训圆满举行！</a><span style="color: rgb(153, 153, 153);">2017/5/5</span>
+                            </div>
+                            <div class="NewsTitleR" style="" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">深圳中投早教合作园实地培训圆满举行！</a><span style="color: rgb(153, 153, 153);">2017/5/5</span>
+                            </div>
+                        </div>
+                    </li><li>
+                        <div>
+                            <div class="NewsTitleL" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">特大喜讯：浙江首家中投早教课程合作园成功签约！</a><span style="color: rgb(153, 153, 153);">2017/5/5</span>
+                            </div>
+                            <div class="NewsTitleR" style="" onmouseover="NewsMouseover(this)" onmouseout="NewsMouseout(this)">
+                                <a href="" target="新闻">课程顾问招聘</a><span style="color: rgb(153, 153, 153);">2017/4/28</span>
+                            </div>
+                        </div>
+                    </li></ul>
+        </div>
+    </div>
+</div>
+<script>
+    function NewsMouseover(val) {
+        $(val).find('span').css('color', '#7AC91F');
+    }
+
+    function NewsMouseout(val) {
+        $(val).find('span').css('color', '#999999')
+    }
+        $(document).ready(function () {
+        setInterval('AutoScroll("#TAd")', 3000)
+        });
+</script>
+
+
+    <div class="clearfix">
+    </div>
+    <!-- focusBox -->
+    <div class="layoutCont" style="width: 1100px">
+        <div class="gridNav">
+            <div class="gd1">
+                <a class="a1 various" data-fancybox-type="iframe" href="http://www.dadikid.com/Home/video"><span>品牌理念</span></a>
+                
+                <a href="" class="a2"><span>园所特色</span></a> <a href="" class="a3">
+                    <span>招生支持</span>
+                </a>
+            </div>
+            <div class="gd2">
+                <a href="" class="a1" title="幼儿园加盟"></a>
+            </div>
+            <div class="gd2" style="float: right;">
+                <a href="" class="a2" title="幼儿园合作"></a>
+            </div>
+        </div>
+        <!-- gridNav -->
+        <div class="clearfix">
+        </div>
+        <div class="inTh">
+            <span class="ss cTh" title="课程合作"></span><a href="" title="更多" class="more"></a>
+        </div>
+        <div class="inClink">
+            <a href="" target="_blank" class="aa aa1"><span></span>奇乐数学</a> <a href="" target="_blank" class="aa aa2">
+                <span></span>
+                DMBA<br>
+                财商宝贝
+            </a> <a href="" target="_blank" class="aa aa3"><span></span>科学探索</a> <a href="" target="_blank" class="aa aa4">
+                <span></span>小瓢虫<br>
+                绘本馆
+            </a> <a href="" target="_blank" class="aa aa5"><span></span>ABC mouse</a>
+            <a href="" target="_blank" class="aa aa6"><span></span>dadi阅读</a>
+            <a href="" target="_blank" class="aa aa7"><span></span>dadi数学</a>
+            <a href="" target="_blank" class="aa aa8"><span></span>咪迪美学</a>
+            <a href="" target="_blank" class="aa aa9"><span></span>中投数学</a>
+        </div>
+        <!-- inClink -->
+<!--        <div class="inTh">
+            <span class="ss pTh" title="热门产品"></span><a href="http://www.dadikid.com/ResourceList/p" title="更多" class="more"></a>
+        </div>
+        <ul class="cUl">
+            <li>
+                <a href="http://www.dadikid.com/Resource/ydfx">
+                    <img src="201433852283495.jpg"><p>幼儿运动服夏装</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.dadikid.com/Resource/ydfq">
+                    <img src="201433846446017.jpg"><p>幼儿运动服冬装</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.dadikid.com/Resource/ybkc">
+                    <img src="2017391618196599.jpg"><p>中投学前预备课程</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.dadikid.com/Resource/qgq">
+                    <img src="20101191425538539.jpg"><p>中投软式曲棍球器材包</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.dadikid.com/Resource/yesx">
+                    <img src="2013427119108539.jpg"><p>中投阅读幼儿前书写练习册</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.dadikid.com/Resource/ddylb">
+                    <img src="2014931017403107.jpg"><p>弯弯的笔</p>
+                </a>
+            </li>
+        </ul>-->
+    </div>
+    <!-- layoutCont -->
+    <div class="clear_b">
+    </div>
+    <div class="footerBox">
+        <div class="ftNav">
+            <p>
+                <a href="" target="_blank">友情链接</a>：  <a href="http://jinrongjiema.com" target="_blank">金融街国际并购公会</a>
+                ｜ <a href="">中投学院</a>
+               <!-- ｜ <a href="http://www.dadikid.net/" target="_blank">Dadi家园宝</a>
+                ｜ <a href="http://www.dadikid.net/abcmouse/index.aspx" target="_blank">ABCmouse</a>
+                ｜ <a href="http://www.apeac2015.org/" target="_blank">亚洲幼教年会</a>-->
+            </p>
+        </div>
+        <!-- ftNav -->
+        <div class="clear_b">
+        </div>
+        <div class="ftNav2">
+            <p>
+<a href="">关于我们</a>  / <a href="">幼教之窗</a>  / <a href="">人才招聘</a>  / <a href="">法律声明</a>  / <a href="">中投邮箱</a>             </p>
+        </div>
+        <p class="p1">
+            
+             Copyright © 2014 Zhongtou.com All Rights Reserved 京ICP 备14062269号-3
+</p><div style="width:300px;margin:0 auto; padding:10px 0;">
+    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44040202000480" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+        <img src="record.png" style="float:left;">
+        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 44040202000480号</p>
+    </a>
+</div>
+
+    </div>
+    <!-- footerBox -->
+    
+
+<style>
+    #share a {
+        display: block;
+        width: 45px;
+        height: 43px;
+        margin-top: 3px;
+        background: url(images/side_r_icon.png) no-repeat;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background-position: 1px -44px;
+        padding: 0;
+        margin: 3px 0 0 0;
+    }
+
+        #share a:hover {
+            background-position: -49px -44px;
+        }
+</style>
+<div class="sideRightBox">
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1138634887&amp;site=qq&amp;menu=yes"></a>
+
+    <div id="share">
+        <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1493961939224"><a href="http://www.dadikid.com/#" class="aShare" data-cmd="more"></a></div>
+    </div>
+    <a id="backTop" href="http://www.dadikid.com/#" class="aTop" title="回到顶部" style="display: none;"></a>
+</div>
+</body></html>
